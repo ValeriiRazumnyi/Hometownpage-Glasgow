@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glasgow Tours</title>
+    <title>Glasgow Carousel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,34 +14,97 @@
         <h1>Glasgow: A City of Timeless Charm and Bold Adventures</h1>
         <p>Welcome to a place where the past, present, and future collide in an unforgettable experience.</p>
     </div>
-    
-    <div class="carousel">
+
+    <div class="widget">
         <h2>Museum of Kelvingrove</h2>
-        <div class="slides">
-            <input type="radio" name="carousel" id="slide1" checked>
-            <input type="radio" name="carousel" id="slide2">
-            <input type="radio" name="carousel" id="slide3">
-
-            <div class="carousel-images">
-                <div class="carousel-img" id="img1">
-                    <img src="https://www.myhighlands.de/wp-content/uploads/2016/05/Kelvingrove-Museum-14.jpg.webp" alt="Museum of Kelvingrove 1">
-                </div>
-                <div class="carousel-img" id="img2">
-                    <img src="https://www.myhighlands.de/wp-content/uploads/2016/05/Kelvingrove-Museum-14.jpg.webp" alt="Museum of Kelvingrove 2">
-                </div>
-                <div class="carousel-img" id="img3">
-                    <img src="https://www.myhighlands.de/wp-content/uploads/2016/05/Kelvingrove-Museum-14.jpg.webp" alt="Museum of Kelvingrove 3">
-                </div>
-            </div>
-
-            <div class="carousel-controls">
-                <label for="slide1" class="prev">&#10094;</label>
-                <label for="slide2" class="next">&#10095;</label>
-            </div>
+        <div class="carousel">
+            <button class="carousel-btn prev">&lt;</button>
+            <img src="https://www.myhighlands.de/wp-content/uploads/2016/05/Kelvingrove-Museum-14.jpg.webp" class="widget-img">
+            <img src="https://cms.enjourney.ru/upload/Jana/Great%20Britan/Glasgow%20attraction/Kelwingrow.jpg" class="widget-img hidden">
+            <img src="https://puteshestvyie.ru/sites/default/files/glazgo-29.jpg" class="widget-img hidden">
+            <button class="carousel-btn next">&gt;</button>
         </div>
+        <p>Explore the treasures of art and history.</p>
+        <button class="btn"><a href="https://www.linkedin.com/in/valerii-razumnyi-124797305/" target="_blank">More info</a></button>
     </div>
 
-    <a href="#header" id="backToTop">&#8679;</a>
+    <div class="widget">
+        <h2>Famous Tours</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev">&lt;</button>
+            <img src="https://traveljunkiegirl.com/wp-content/uploads/2016/08/IMG_5063.jpg" class="widget-img">
+            <img src="https://citysightseeingglasgow.co.uk/wp-content/uploads/2024/06/GCS_Electric_Fleet__1JS5011_JS-scaled.jpg" class="widget-img hidden">
+            <img src="https://www.rabbies.com/application/files/5516/9658/1410/GLASGOW_DUKE_WELLINGTON_CONE_shutterstock_413713573_2_1.jpg" class="widget-img hidden">
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+        <p>Uncover the hidden gems of Glasgow with expert guides.</p>
+        <button class="btn"><a href="https://www.linkedin.com/in/valerii-razumnyi-124797305/" target="_blank">More info</a></button>
+    </div>
 
+    <div class="widget">
+        <h2>Unique Whisky Adventures</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev">&lt;</button>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/3d/65/e9/whisky-tours-scotland.jpg?w=1200&h=900&s=1" class="widget-img">
+            <img src="https://images.squarespace-cdn.com/content/v1/5efb46cf46fb3d2f36091afa/3705c13b-d53a-49b6-a975-b67f628c520e/Untitled+%282400+x+1080+px%29.jpg" class="widget-img hidden">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/fe/75/fa/once-upon-a-whisky.jpg?w=1200&h=900&s=1" class="widget-img hidden">
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+        <p>Indulge in a journey through Scotland's finest whiskies.</p>
+        <button class="btn"><a href="https://www.linkedin.com/in/valerii-razumnyi-124797305/" target="_blank">More info</a></button>
+    </div>
+
+    <div class="widget">
+        <h2>Fun for Kids</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev">&lt;</button>
+            <img src="https://www.mummytravels.com/wp-content/uploads/2023/04/scotland-glasgow-street-art-picfair014544444s.jpg" class="widget-img">
+            <img src="https://res.dayoutwiththekids.co.uk/image/upload/f_auto,c_fill,w_2172,q_auto,g_center/v1674469020/attractions/w/wacky-warehouse-unicorn-w72zrbfv/WW_Play_Down_Steps_nitpm5.png" class="widget-img hidden">
+            <img src="https://i0.wp.com/manhattanite.co/wp-content/uploads/2020/03/Glasgow-street-art-12.jpg?fit=1440%2C971" class="widget-img hidden">
+            <button class="carousel-btn next">&gt;</button>
+        </div>
+        <p>Discover entertaining activities for the whole family!</p>
+        <button class="btn"><a href="https://www.linkedin.com/in/valerii-razumnyi-124797305/" target="_blank">More info</a></button>
+    </div>
+
+    <div class="widget" id="tour-invite">
+        <h2>We're excited to see you!</h2>
+        <img src="https://houseofscotland.nz/cdn/shop/files/shutterstock_1686269041_4472x.jpg?v=1713228637" class="widget-img" id="invite-img">
+        <p>Hover for details</p>
+        <button class="btn"><a href="https://www.linkedin.com/in/valerii-razumnyi-124797305/" target="_blank">Book Now</a></button>
+    </div>
+
+    <p id="footer">We can't wait to meet you in Glasgow and guide you through the best tours the city has to offer, and even more!</p>
+    
+    <button class="scroll-up" onclick="window.scrollTo(0, 0)">▲</button>
+
+    <script>
+        const carousels = document.querySelectorAll('.carousel');
+
+        carousels.forEach(carousel => {
+            let currentIndex = 0;
+            const images = carousel.querySelectorAll('.widget-img');
+            const prevButton = carousel.querySelector('.prev');
+            const nextButton = carousel.querySelector('.next');
+
+            function updateCarousel(index) {
+                images.forEach((img, i) => {
+                    img.classList.toggle('hidden', i !== index);
+                });
+            }
+
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+                updateCarousel(currentIndex);
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+                updateCarousel(currentIndex);
+            });
+
+            updateCarousel(currentIndex);
+        });
+    </script>
 </body>
 </html>
