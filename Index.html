@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <div id="header">
@@ -41,7 +41,7 @@
         <button class="btn"><a href="https://www.linkedin.com/in/valerii-razumnyi-124797305/" target="_blank">More info</a></button>
     </div>
 
-    <div class="widget">
+        <div class="widget">
         <h2>Unique Whisky Adventures</h2>
         <div class="carousel">
             <button class="carousel-btn prev">&lt;</button>
@@ -54,7 +54,7 @@
         <button class="btn"><a href="https://www.linkedin.com/in/valerii-razumnyi-124797305/" target="_blank">More info</a></button>
     </div>
 
-    <div class="widget">
+       <div class="widget">
         <h2>Fun for Kids</h2>
         <div class="carousel">
             <button class="carousel-btn prev">&lt;</button>
@@ -75,36 +75,9 @@
     </div>
 
     <p id="footer">We can't wait to meet you in Glasgow and guide you through the best tours the city has to offer, and even more!</p>
-    
+
     <button class="scroll-up" onclick="window.scrollTo(0, 0)">▲</button>
 
-    <script>
-        const carousels = document.querySelectorAll('.carousel');
-
-        carousels.forEach(carousel => {
-            let currentIndex = 0;
-            const images = carousel.querySelectorAll('.widget-img');
-            const prevButton = carousel.querySelector('.prev');
-            const nextButton = carousel.querySelector('.next');
-
-            function updateCarousel(index) {
-                images.forEach((img, i) => {
-                    img.classList.toggle('hidden', i !== index);
-                });
-            }
-
-            prevButton.addEventListener('click', () => {
-                currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-                updateCarousel(currentIndex);
-            });
-
-            nextButton.addEventListener('click', () => {
-                currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-                updateCarousel(currentIndex);
-            });
-
-            updateCarousel(currentIndex);
-        });
-    </script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
