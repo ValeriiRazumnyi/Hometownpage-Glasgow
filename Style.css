@@ -71,14 +71,15 @@ label.next {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
     border-radius: 50%;
     text-decoration: none;
     font-size: 24px;
+    opacity: 0.8;
 }
 
 #backToTop:hover {
-    background-color: #555;
+    background-color: rgba(0, 0, 0, 0.7);
 }
