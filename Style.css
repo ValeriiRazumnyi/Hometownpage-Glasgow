@@ -1,85 +1,119 @@
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Orbitron', sans-serif;
+    background-image: url("https://www.export.org.uk/media/150mdkwy/Glasgow.jpg");
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
 }
 
 #header h1 {
-    margin-top: 30px;
+    text-shadow: 2px 2px 4px black;
+    margin-top: 50px;
+}
+
+#header p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #82a5ca;
+}
+
+.widget {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    border: 6px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.widget-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+h2 {
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgba(130, 165, 202, 0.7);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tour-invite {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+}
+
+#tour-invite .widget-img {
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+#tour-invite:hover .widget-img {
+    content: url("https://i.pinimg.com/originals/4b/ea/bc/4beabc79f3ce42b6d7fe8bb73f6cd8df.gif");
+    object-fit: cover;
 }
 
 .carousel {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
     position: relative;
-}
-
-.carousel-images {
     display: flex;
-    overflow: hidden;
-    width: 100%;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel-img {
-    flex: 1 0 100%;
-}
-
-.carousel-img img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-#slide1:checked ~ .carousel-images #img1,
-#slide2:checked ~ .carousel-images #img2,
-#slide3:checked ~ .carousel-images #img3 {
-    display: block;
-}
-
-.carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-}
-
-.carousel-controls label {
+.carousel-btn {
+    background-color: rgba(130, 165, 202, 0.7);
+    border: none;
+    color: white;
+    font-size: 24px;
     cursor: pointer;
-    font-size: 24px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: 50%;
-    text-align: center;
-    width: 40px;
-    height: 40px;
+    margin: 0 10px;
+    border-radius: 5px;
 }
 
-label.prev {
-    margin-left: 10px;
+.carousel-btn:hover {
+    background-color: rgba(130, 165, 202, 0.9);
 }
 
-label.next {
-    margin-right: 10px;
+.hidden {
+    display: none;
 }
 
-#backToTop {
+#footer {
+    font-style: italic;
+    padding: 30px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid white;
+    margin-top: 30px;
+}
+
+.scroll-up {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 50px;
+    right: 50px;
+    background: rgba(130, 165, 202, 0.7);
+    border: none;
     color: white;
     padding: 10px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 24px;
-    opacity: 0.8;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-#backToTop:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+.scroll-up:hover {
+    background: rgba(130, 165, 202, 0.9);
 }
